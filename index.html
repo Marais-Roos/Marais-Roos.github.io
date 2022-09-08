@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Link CSS Stylesheet-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!--Link Necessary Icons-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icons/apple-touch-icon.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icons/favicon-32x32.png"
+        >
+
+        <!--Animate CCSS CDN-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        >
+
+        <!--Title of Webpage-->
+        <title>Marais Roos | Software Engineer</title>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <h1>MARAIS ROOS</h1>
+            <ul class="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contacts" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+        
+        <!--Hero Section-->
+        <section class="hero" id=""about>
+            <img
+                src="C988A1F1-551F-4576-9C8B-B472651B6B7C.jpg"
+                alt="green-tech"
+                loading="lazy"
+                class="hero-image"
+            />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+
+                </p>
+            </div>
+        </section>
+
+        <!--More About Section-->
+        <section class="more-about">
+            <h2>More About Me</h2>
+            <hr>
+            <p>
+                abc
+            </p>
+            <p>
+                abc
+            </p>
+            <p>
+                abc
+            </p>
+        </section>
+
+        <!--Skills Section-->
+        <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
+            <hr>
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse">
+                    <img
+                        src="assets/icons/icons8-c++.svg"
+                        alt=""
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                    <img
+                        src="assets/icons/icons8-github.svg"
+                        alt=""
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                    <img
+                        src="assets/icons/icons8-html-5.svg"
+                        alt="Html 5 icon by Icons8"
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                </div>
+                <div class="second-set animate__animated animate__pulse">
+                    <img
+                        src="assets/icons/icons8-mysql-logo.svg"
+                        alt=""
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                    <img
+                        src="assets/icons/icons8-office-365.svg"
+                        alt=""
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                    <img
+                        src="assets/icons/icons8-python.svg"
+                        alt=""
+                        loading="lazy"
+                        class = "icon icon-card"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!--Projects Section-->
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <hr>
+            <!--<div class="projects-container">
+                <div class="project-container project-card">
+                    <img 
+                        src=""
+                        alt=""
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                    <h3 class="project-title"></h3>
+                    <p class="project-details">
+
+                    </p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+            </div>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <img 
+                        src=""
+                        alt=""
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                    <h3 class="project-title"></h3>
+                    <p class="project-details">
+
+                    </p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+            </div>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <img 
+                        src=""
+                        alt=""
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                    <h3 class="project-title"></h3>
+                    <p class="project-details">
+
+                    </p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+            </div>-->
+            <p class="soon">Coming Soon...</p>
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form">
+                <form action="" method="POST"><!--ADD AN ACTION-->
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter Your Name"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="sender-email"
+                            placeholder="Enter Your Email"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            cols="60"
+                            rows="10"
+                            placeholder="Enter Your Message"
+                            name="message"
+                            class="input-field"
+                            required
+                        ></textarea>
+                    </div>
+                    <input
+                        type="submit"
+                        value="Submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                    />
+                </form>
+            </div>
+        </section>
+
+        <!--Social Accounts - Fixed o the Right-->
+
+
+        <!--Scroll to Top-->
+
+
+        <!--Footer Section-->
+    </body>
+</html>
