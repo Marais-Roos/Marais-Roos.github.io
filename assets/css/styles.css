@@ -114,7 +114,7 @@ nav ul li {
 }
 
 .bio h1 {
-    margin-bottom: 0.3rem 0;
+    margin-bottom: var(--bottom-margin);
 }
 
 .bio p {
@@ -230,10 +230,10 @@ nav ul li {
 
 .contact h2 {
     text-align: center;
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: var(--bottom-margin-2);
 }
 
-.contact-form {
+.contact-form-container {
     max-width: 40.75rem;
     margin: 0 auto;
     padding: 0.938rem;
@@ -242,18 +242,18 @@ nav ul li {
     background-color: var(--bg-color);
 }
 
-.contact-form label {
+.contact-form-container label {
     line-height: 2.7em;
     font-weight: var(--bold-font);
     color: var(--primary-color);
 }
 
-.contact-form textarea {
+.contact-form-container textarea {
     min-height: 6.25rem;
     font-size: 14px;
 }
 
-.contact-form .input-field {
+.contact-form-container .input-field {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -317,4 +317,100 @@ footer {
 .up-arrow {
     width: 3rem;
     height: 3rem;
+}
+
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bio {
+        margin-top: 1rem;
+        width: 20.5rem;
+    }
+
+    .more-about {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+    }
+
+    .more-about p {
+        text-align: justify;
+    }
+
+    .icon {
+        width: 5.785rem;
+        height: 5.35rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .projects {
+        margin-left: 2rem;
+    }
+
+    .project-container {
+        width: 20.875rem;
+    }
+
+    .contact-form-container {
+        max-width: 23.75rem;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+    .hero img {
+        height: 37.5rem;
+        width: 23rem;
+    }
+
+    .bio {
+        width: 18.3rem;
+    }
+
+    .project-container {
+        width: 17.875rem;
+    }
+}
+
+.contact-form-container {
+    max-width: 17.75rem;
 }
