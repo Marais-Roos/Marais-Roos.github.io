@@ -123,11 +123,10 @@ nav ul li {
 }
 
 .more-about {
-    margin-top: 2rem;;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
-    width: 90%;
-    margin-left: 5rem;
     border-radius: 15px;
 }
 
@@ -360,7 +359,7 @@ footer {
     }
 
     .more-about {
-        margin-left: 2rem;
+        margin: auto;
         margin-top: 2rem;
         padding: 1rem 3.5rem;
     }
@@ -383,7 +382,8 @@ footer {
     }
 
     .projects {
-        margin-left: 2rem;
+        margin: auto;
+        margin-top: 2.5rem;
     }
 
     .project-container {
